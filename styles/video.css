@@ -1,0 +1,130 @@
+.thumbnail{
+  width: 100%;
+}
+/* using width only, tells the img to 
+  shrink to the width specified and also maintain
+  the height*/
+
+  /* object-fit:contain;
+  object-position: left;
+  border-style: solid;
+  border-color: red; */
+
+.video-info-grid{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+ 
+}
+.profile-picture{
+  width: 36px;
+  border-radius: 40px;
+}
+
+.video-title{
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.thumbnail-row{
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.video-author, .video-stats{
+  font-size: 12px;
+  color: rgb(96,96,96);
+}
+.video-author{
+  margin-bottom: 4px;
+}
+
+.video-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 40px;
+ 
+}
+
+@media (max-width: 750px) {
+  .video-grid{
+    grid-template-columns: 1fr 1fr ;
+  }
+} 
+@media (min-width: 751px) and (max-width: 999px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr ;
+  }
+} 
+
+@media (min-width: 1000px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+
+/* after giving nested horizontal divs as inline block, the
+still appear above each other because by default, divs
+have a width of 100% */
+
+.video-time{
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  right: 8px;
+  font-size:  12px;
+  font-weight: 500;
+  padding: 4px;
+  border-radius: 2px;
+}
+.channel-picture-tooltip
+{ 
+  position: relative;
+  display: inline-block;
+}
+
+.channel-picture-tooltip .tooltip{
+  display: flex;
+  flex-direction: row;
+  font-family: Roboto;
+  position: absolute;
+  background-color: white;
+  color: black;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 8px;
+  box-shadow: 2px 3px 10px rgba(0,0,0,0.30);
+  left: 0;
+  bottom: -80px; 
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+  width: 200px;
+  
+}
+.channel-picture-tooltip .tooltip .profile-picture{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+.channel-picture-tooltip .tooltip .name{
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+
+}
+.channel-picture-tooltip .tooltip .subscribers-count{
+  font-size: 16px; 
+  color: gray;
+}
+.channel-picture-tooltip:hover .tooltip{
+  opacity: 1;
+}

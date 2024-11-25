@@ -1,0 +1,87 @@
+ /* the style element does not create
+     anything visible on the page so you 
+     can keep these under head element*/
+     .subscribe-button {
+      background-color: rgb(200, 0, 0);
+      color: white;
+      border: none;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 16px;
+      padding-right: 16px;
+      border-radius: 2px;
+      cursor: pointer;
+      margin-right: 8px;
+      margin-left: 20px;
+      transition: opacity 0.15s;
+      vertical-align: top;
+    }
+  
+    /* to align all the buttons at top, we use top align  */
+    .subscribe-button:hover {
+      opacity: 0.8;
+    }
+  
+    .subscribe-button:active {
+      opacity: 0.5;
+  
+    }
+  
+    .join-button {
+      background-color: white;
+      color: rgb(41, 118, 211);
+      border-color: rgb(41, 118, 211);
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: background-color 0.15s, color 0.15s;
+      padding-top: 9px;
+      padding-bottom: 9px;
+      padding-left: 16px;
+      padding-right: 16px;
+      margin-right: 8px;
+    }
+  
+    .join-button:hover {
+      background-color: rgb(41, 118, 211);
+      color: white;
+    }
+  
+    .join-button:active {
+      opacity: 0.7;
+    }
+  
+  
+    .tweet-button {
+      background-color: rgb(29, 155, 240);
+      color: white;
+      border: none;
+  
+      padding-top: 9px;
+      padding-bottom: 9px;
+      padding-left: 16px;
+      padding-right: 16px;
+  
+      border-radius: 18px;
+      font-weight: bold;
+      font-size: 15px;
+      cursor: pointer;
+      transition: box-shadow 0.15s;
+      vertical-align: top;
+  
+  
+  
+      /* The trick to getting side curved for tweet button is use half of width/height (whichevr is lower) for border-radius */
+      /* box-shadow: 0px 0px 0px color; */
+      /* horizontal pos,vertical pos, blur, color of shadow  */
+    }
+  
+    .tweet-button:hover {
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+  
+    }
+  
+    .tweet-button:active {
+      opacity: 0.7;
+    }
